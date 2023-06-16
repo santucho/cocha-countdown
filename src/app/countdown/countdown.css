@@ -1,0 +1,20 @@
+@tailwind utilities;
+
+.countdown-container {
+    text-align: center;
+    margin: auto;
+    padding: 32px;
+}
+
+.fluorescent-text {
+    color: #E794D8;
+    text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.paragraph {
+    font-size: 24px;
+}
