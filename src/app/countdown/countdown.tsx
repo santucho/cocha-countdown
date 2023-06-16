@@ -5,9 +5,9 @@ import React, {Dispatch, SetStateAction, useEffect, useState} from 'react';
 import {Props, Time} from '@/app/countdown/types';
 
 const getTimeMillis = (
-    date: Date
+    date: any
 ): Time => {
-  let now = new Date();
+  let now: any = new Date();
   let distance = date - now;
 
   let days = Math.floor(distance / (1000 * 60 * 60 * 24));
