@@ -23,7 +23,7 @@ const getTimeMillis = (
 };
 
 const Countdown = ({date}: Props) => {
-  const [time, setTime]: Time = useState();
+  const [time, setTime] = useState<Time>({days: -1, hours: -1, minutes: -1, seconds: -1} as Time);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
