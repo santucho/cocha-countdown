@@ -37,10 +37,10 @@ const Countdown = ({date}: Props) => {
         <div className={'text-3xl lg:text-5xl'}>PROXIMAMENTE</div>
         {!!time && !(time.days < 0) && !(time.hours < 0) && !(time.minutes < 0) && !(time.seconds < 0) &&
             <div className={'text-lg lg:text-xl break-normal'}>Faltan&nbsp;
-              <span>{time.days} d&iacute;as </span>
-              <span>{time.hours} horas </span>
-              <span>{time.minutes} minutos </span>
-              <span>{time.seconds} segundos </span>
+              {(time.days > 0) && <span>{time.days} d&iacute;as </span>}
+              {(time.hours > 0) && <span>{time.hours} horas </span>}
+              {(time.minutes > 0) && <span>{time.minutes} minutos </span>}
+              {(time.seconds > 0) && <span>{time.seconds} segundos </span>}
             </div>
         }
       </div>
